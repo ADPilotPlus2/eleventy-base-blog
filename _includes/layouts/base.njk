@@ -12,8 +12,8 @@
   </head>
   <body>
     <header>
-      <h1 class="home"><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
-<a href="{{ '/' | url }}"><img src="/img/logo.jfif" />A not-really-a-fan page</a>
+      <h3 class="home"><a href="{{ '/' | url }}">{{ metadata.title }}</a></h3>
+<a href="{{ '/' | url }}"><img src="/img/logo.jfif" /></a>A 'not-really-a-fan' page.
       {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
       <ul class="nav">
       {%- for entry in collections.all | eleventyNavigation %}
@@ -29,19 +29,19 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="/img/Dave__Chilli__Moreno.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit,">
+      <img src="/img/Dave__Chilli__Moreno.jpg" alt="Drummer of the band">
       <h5>Chilli Drums</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, but this image is too small to fill the width.</p>
+        <p>This guy is called Dave Moreno, but his nickname is "Chilli" - for some reason.</p>
     </div>
     <div class="carousel-item">
-      <img src="/img/CloudNine.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit,">
+      <img src="/img/CloudNine.jpg" alt="Picture of cloud making the shape of a nine.">
       <h5>Cloud9 Flies</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,but this image is too small to fill the width.</p>
+        <p>Cloud Nine is the name of one of the band's tracks - it's not a favourite of mine, but finding licence-free pictures is a bit of a struggle...</p>
     </div>
     <div class="carousel-item">
       <img src="/img/Puddle_of_Mudd_rocks_Marine_Corps_Base_Hawaii_during_BayFest_2011.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit,">
       <h5>Wes Plays</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,but this image is too small to fill the width.</p>
+        <p>I think Wes is the lead singer and one of the guitarists.  This picture was taken in 2011 at a concert in Hawaii.</p>
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
@@ -57,23 +57,27 @@
 
       <!-- Delete this message -->
 
-      
+      <!-- This is where a lot of content can be put...
+
      <h1> Test heading </h1>
      Test words.  These appeared on the local host, so I guess I could write anything hear 
      in free text with carriage returns?  Hmmm, hitting return was great for starting a new line
      in VS Code, but made no difference to the local host version which wraps such that it always
      fills the screen.  This is really easy to add text as content.  So, how to 
-     format it?  I thought this had a theme?
+     format it?  I thought this had a theme? -->
       
       <!-- Stop deleting -->
 
       {{ content | safe }}
     </main>
 <aside>
-this should be in a side bar that appears on all pages
+This is a side bar that appears on all pages to make sure you eventually listen to this track.
+
 <iframe src="https://open.spotify.com/embed/track/0pEBL0Jl8ak9vEJu8nW9oL" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet fermentum elit. Pellentesque finibus accumsan suscipit. Mauris accumsan sit amet quam fermentum malesuada. Mauris bibendum laoreet urna, quis maximus nunc rhoncus vel. In in volutpat purus, vitae pretium ante. Curabitur vel magna accumsan, interdum metus sit amet, consequat metus. Curabitur sem elit, malesuada volutpat magna vitae, laoreet mattis elit.</p>
+<p>There are a lot of very good tracks on Come Clean, but this one was easily obtained from Spotify and is one of my favourites.  There is some pretty intricate guitar work to listen out for and unlike on "She F***ing Hates Me", they didn't just make one perfect recording and keep repeating the recording to create the refrain.</p>
+
+<p>  The track called "Control" (see video) has a very catchy chord sequence that led me to create two tracks from my first album - "Doom" and "Tories Out".  I'll see if I can attach them here... </p> 
 
 
 
