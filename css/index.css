@@ -1,5 +1,10 @@
+header{
+  background-color: rgb(197, 219, 238);
+}
 header img{
   max-width:200px;
+  
+  margin: 10px;
 }
 .nav{
   float:right;
@@ -9,6 +14,7 @@ header img{
 }
 body{
   width:100%;
+  background-color: rgb(193, 195, 196);
 }
 main{
   width:calc(66.666%);
