@@ -13,7 +13,7 @@
   <body>
     <header>
       <h3 class="home"><a href="{{ '/' | url }}">{{ metadata.title }}</a></h3>
-<a href="{{ '/' | url }}"><img src="/img/logo.jfif" /></a>A 'not-really-a-fan' page.
+<a href="{{ '/' | url }}"><img src="/img/logo.jfif" /></a> A 'not-really-a-fan' page.
       {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
       <ul class="nav">
       {%- for entry in collections.all | eleventyNavigation %}
@@ -36,7 +36,7 @@
     <div class="carousel-item">
       <img src="/img/CloudNine.jpg" alt="Picture of cloud making the shape of a nine.">
       <h5>Cloud9 Flies</h5>
-        <p>Cloud Nine is the name of one of the band's tracks - it's not a favourite of mine, but finding licence-free pictures is a bit of a struggle...</p>
+        <p>Cloud Nine is the name of one of the band's tracks - it's not a favourite of mine, but this photograph is a bit special and finding licence-free pictures is a bit of a struggle...</p>
     </div>
     <div class="carousel-item">
       <img src="/img/Puddle_of_Mudd_rocks_Marine_Corps_Base_Hawaii_during_BayFest_2011.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit,">
@@ -77,8 +77,17 @@ This is a side bar that appears on all pages to make sure you eventually listen 
 
 <p>There are a lot of very good tracks on Come Clean, but this one was easily obtained from Spotify and is one of my favourites.  There is some pretty intricate guitar work to listen out for and unlike on "She F***ing Hates Me", they didn't just make one perfect recording and keep repeating the recording to create the refrain.</p>
 
-<p>  The track called "Control" (see video) has a very catchy chord sequence that led me to create two tracks from my first album - "Doom" and "Tories Out".  I'll see if I can attach them here... </p> 
-
+<p>  The track called "Control" (see video) has a very catchy chord sequence that led me to create two tracks from my first album - "Doom" and "Twats Together".   </p> 
+<p> This is Doom - a cheery ditty about the impending climate disaster... </p>
+<audio controls>
+  <source src="/sounds/01Doom.mp3" type="audio/mpeg" preload = "auto">
+  Your browser does not support the audio tag.
+</audio>
+<p>This is Twats Together - a slightly rude song about my hatred of the effing Tories... </p>
+<audio controls>
+  <source src="/sounds/10Twats Together.mp3" type="audio/mpeg" preload = "auto">
+  Your browser does not support the audio tag.
+</audio>
 
 
 </aside>
