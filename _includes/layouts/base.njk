@@ -17,6 +17,7 @@
       {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
       <ul class="nav">
       {%- for entry in collections.all | eleventyNavigation %}
+      <a class="btn btn-primary" href="/about/" role="button">Link</a>
         <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}"><a href="{{ entry.url | url }#exactline}">{{ entry.title }}</a></li>
       {%- endfor %}
       </ul>
