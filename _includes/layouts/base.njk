@@ -12,47 +12,16 @@
   </head>
   <body>
     <header>
-      <h3 class="home"><a href="{{ '/' | url }}">{{ metadata.title }}</a></h3>
+      <h3 class="home">{{ '/' | url }}">{{ metadata.title }}</h3>
 <a href="{{ '/' | url }}"><img src="/img/logo.jfif" /></a> A 'not-really-a-fan' page.
       {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
       <ul class="nav">
       {%- for entry in collections.all | eleventyNavigation %}
-        <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
+        <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}"><a href="{{ entry.url | url }#exactline}">{{ entry.title }}</a></li>
       {%- endfor %}
       </ul>
     </header>
- <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="/img/Dave__Chilli__Moreno.jpg" alt="Drummer of the band">
-      <h5>Chilli Drums</h5>
-        <p>This guy is called Dave Moreno, but his nickname is "Chilli" - for some reason.</p>
-    </div>
-    <div class="carousel-item">
-      <img src="/img/CloudNine.jpg" alt="Picture of cloud making the shape of a nine.">
-      <h5>Cloud9 Flies</h5>
-        <p>Cloud Nine is the name of one of the band's tracks - it's not a favourite of mine, but this photograph is a bit special and finding licence-free pictures is a bit of a struggle...</p>
-    </div>
-    <div class="carousel-item">
-      <img src="/img/Puddle_of_Mudd_rocks_Marine_Corps_Base_Hawaii_during_BayFest_2011.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit,">
-      <h5>Wes Plays</h5>
-        <p>I think Wes is the lead singer and one of the guitarists.  This picture was taken in 2011 at a concert in Hawaii.</p>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+ 
     <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
 
       <!-- Delete this message -->
